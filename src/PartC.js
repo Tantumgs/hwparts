@@ -90,7 +90,7 @@ function CourseInfo({ title, credits }) {
   );
 }
 
-function Status({ isOnline }) {
+function StatusMedium({ isOnline }) {
   return <p>{isOnline ? 'Online' : 'Offline'}</p>;
 }
 
@@ -245,7 +245,7 @@ export default function PartC({ onNavigate }) {
         <div><strong>6 (createElement):</strong> {elementCE}</div>
         <div><strong>7:</strong> <StudentCard name="Ali" group="G1" /></div>
         <div><strong>8:</strong> <CourseInfo title="React 101" credits={3} /></div>
-        <div><strong>9:</strong> <Status isOnline={true} /></div>
+        <div><strong>9:</strong> <StatusMedium isOnline={true} /></div>
         <div><strong>10:</strong> <Notification count={2} /></div>
         <div><strong>11:</strong> <TaskList tasks={tasks} /></div>
         <div><strong>14:</strong> <SelectButton /></div>
@@ -256,7 +256,7 @@ export default function PartC({ onNavigate }) {
             <p>We are learning JSX today.</p>
           </Card>
         </div>
-        <div><strong>18 (spread):</strong> <UserProfile {...user} />{' '}(explicit: <UserProfile name={user.name} age={user.age} group={user.group} />)</div>
+        <div><strong>18 (spread):</strong> <UserProfile {...user} /> (explicit: <UserProfile name={user.name} age={user.age} group={user.group} />)</div>
         <div><strong>19:</strong> <Access isAdmin={false} /></div>
         <div><strong>20:</strong> <NameInput /></div>
         <div><strong>24:</strong> <Dashboard user={{ name: 'Nurlan' }} notifications={notifications} /></div>
